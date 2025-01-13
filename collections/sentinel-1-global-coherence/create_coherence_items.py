@@ -3,6 +3,7 @@ import urllib.parse
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path, PurePath
+from typing import Optional
 
 import boto3
 from shapely import geometry
@@ -57,7 +58,7 @@ class ItemMetadata:
     bbox: geometry.Polygon
     tile: str
     product: str
-    extra: ExtraItemMetadata = None
+    extra: Optional[ExtraItemMetadata] = None
 
 
 def get_s3_url() -> str:
