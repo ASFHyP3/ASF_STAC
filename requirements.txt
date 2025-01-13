@@ -1,7 +1,7 @@
 -r requirements-apps-api.txt
 -r requirements-run-codebuild.txt
 ./lib/asf-stac-util/
-boto3==1.35.82
+boto3==1.35.97
 cfn-lint==1.22.2
 ruff
 mypy
